@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">  
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header flex mx-3">
+      <div class="mainMenu flex flex-space-between flex-2 ">
+        <div class="logo flex-1 flex-center" id="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div id="mobile-toggle" class="button" ></div>
+        <ul class="flex-1 flex-center toRight mx-2">
+          <li><a href='index.html' class="hvr-underline-from-center">首頁</a></li>
+          <li><a href='sweet.html' class="hvr-underline-from-center">甜點</a></li>
+          <li><a href='login.html' class="hvr-underline-from-center active">登入</a></li>
+        </ul>
+      </div>
+      <a href="cart.html" id="shoppingCartIcon" class="flex flex-justify-content-center flex-align-items-center">
+        <i class="color-darkGreen fas fa-shopping-cart hvr-bounce-in"></i>
+      </a>
+    </div>
+    <div class="flex flex-row flex-justify-content-center content m-3">
+      <div class="loginPage flex flex-column w-4">
+        <div class="w-10 bg-dG-color-lG px-2 py-6">
+          <h2 class="f-36">會員登入</h2>
+        </div>
+        <div  class="loginMethod flex flex-row p-2 flex-justify-content-center bg-lightGreen ">
+          <div class=" flex flex-justify-content-center ">
+              <h2 class="bg-w-color-g p-2">facebook</h2>
+              <h2 class="bg-w-color-g p-2">Google</h2>
+              <h2 class="bg-w-color-g  p-2">Yahoo!</h2>
+          </div>
+        </div>
+        <div class="w-10 bg-dG-color-lG flex flex-column flex-align-items-center px-4">
+          <div class="search loginEmail h-10 w-10 flex flex-space-between flex-align-items-center">
+              <i class="color-darkGreen fas fa-user-alt mx-2"></i>
+              <input class="f-16 color-darkGreen w-10 h-10 " placeholder="電子信箱/手機號碼">
+          </div>
+          <div class="search my-2 h-10 flex flex-space-between flex-align-items-center w-10">
+              <i class="color-darkGreen fas fa-unlock mx-2"></i>
+              <input class="f-16 color-darkGreen w-10 h-10" placeholder="請輸入使用者密碼">
+          </div>
+          <div class="mb-2 h-10 flex flex-row flex-start">
+            <label style="width: 16px;height: 16px;background: #EAF0ED"></label>
+            <p class="mx-2 f-16" >記住我</p>
+          </div>
+        </div>
+        <div class="w-10">
+            <button class=" bg-lY-color-dG w-10 p-2 f-24 hvr-ripple-out">登入帳號</button>
+        </div>
+      </div>
+      <div  class="contactLogin w-4 flex flex-column p-3 flex-align-items-center bg-lightGreen my-3">
+        <h2 class="color-green f-24 my-3">—— 連結社群帳號 ——</h2>
+        <button class="bg-w-color-g  p-2 w-10 hvr-underline-reveal">facebook</button>
+        <button class="bg-w-color-g  p-2 w-10 hvr-underline-reveal my-2 ">Google</button>
+        <button class="bg-w-color-g  p-2 w-10 hvr-underline-reveal">Yahoo!</button>
+      </div>
+    </div>
+    <div class="footer flex flex-column">
+      <div class="subscription w-10 flex flex-align-items-center">
+        <div class="subscriptionTitle w-6 flex flex-align-items-center">
+          <img  src="asset/img/logo-light.svg" width="40">
+          <p class="mx-2">訂閱你我的甜蜜郵件</p>
+        </div>
+        <div class="search w-4 h-10 flex flex-space-between flex-align-items-center">
+            <i class="color-darkGreen fas fa-envelope mx-2"></i>
+            <input class="w-10 h-10">
+            <button class="px-2 bg-lightYellow h-10 hvr-ripple-out"><i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+      <div class="info w-10 flex flex-column">
+          <div class="flex flex-row">
+            <div class="flex flex-column flex-space-between">
+              <img src="asset/img/logotype-lg-dark.svg" width="171" >
+              <p class="color-darkGreen fLineHeight">
+                07-1234-5678<br>
+                sweetaste@email.com 800<br>
+                高雄市新興區幸福路 520 號
+              </p>
+            </div>
+            <img class="eatToday toRight" src="asset/img/eatToday.svg" width="80" height="200">
+          </div>
+          <div class="copyRight flex flex-baseline mt-3">
+            <p class="flex flex-row">
+              <img src="asset/img/ic-line@.svg" width="32"  height="32">
+              <img class="mx-2" src="asset/img/ic-facebook.svg" width="32" height="32" >
+            </p>
+            <p class="color-darkGreen toRight">© 2018 Sweetaste* All Rights Reserved</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="asset/js/main.js"></script>
+</body>
+</html>

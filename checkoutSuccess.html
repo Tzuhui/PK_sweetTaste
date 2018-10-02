@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">  
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header flex mx-3">
+      <div class="mainMenu flex flex-space-between flex-2 ">
+        <div class="logo flex-1 flex-center" id="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div id="mobile-toggle" class="button" ></div>
+        <ul class="flex-1 flex-center toRight mx-2">
+          <li><a href='index.html' class="hvr-underline-from-center">首頁</a></li>
+          <li><a href='sweet.html' class="hvr-underline-from-center">甜點</a></li>
+          <li><a href='login.html' class="hvr-underline-from-center active">登入</a></li>
+        </ul>
+      </div>
+      <a href="cart.html" id="shoppingCartIcon" class="flex flex-justify-content-center flex-align-items-center">
+        <i class="color-darkGreen fas fa-shopping-cart hvr-bounce-in"></i>
+      </a>
+    </div>
+
+    <div class="successPage flex flex-row flex-justify-content-center m-3">
+      <div class="pos-rel w-10 flex flex-justify-content-center flex-align-items-center">
+          <img class="w-10 h-10 pos-abs" src="asset/img/success.jpeg">
+          <div class="mx-3 pos-abs w-4">
+              <div class="flex flex-column flex-align-items-center ">
+                  <div class="flex flex-row pos-rel" style="height:25px;">
+                      <div class="pos-rel mr-5">
+                        <div class="success-circle-inside pos-abs">
+                          <i class="color-lightGreen fas fa-check pos-abs" style="left:5px;top:5px;font-size:10px"></i>
+                        </div>
+                        <div class="success-circle-line pos-abs"></div>
+                      </div>
+                      <div class="pos-rel mx-5">
+                          <div class="success-circle-inside pos-abs">
+                            <i class="color-lightGreen fas fa-check pos-abs" style="left:5px;top:5px;font-size:10px"></i>
+                          </div>
+                          <div class="success-circle-line pos-abs"></div>
+                      </div>
+                      <div class="pos-rel ml-5">
+                        <div class="success-circle-inside pos-abs">
+                          <i class="color-lightGreen fas fa-check pos-abs" style="left:5px;top:5px;font-size:10px"></i>
+                        </div>
+                      </div>
+                  </div>
+                  <h2 class="color-darkGreen f-36 my-2">付款成功</h2>
+                  <div class="w-10">
+                      <button class=" bg-lY-color-dG w-10 p-2 f-24 hvr-ripple-out">繼續逛逛</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="footer flex flex-column">
+      <div class="subscription w-10 flex flex-align-items-center">
+        <div class="subscriptionTitle w-6 flex flex-align-items-center">
+          <img  src="asset/img/logo-light.svg" width="40">
+          <p class="mx-2">訂閱你我的甜蜜郵件</p>
+        </div>
+        <div class="search w-4 h-10 flex flex-space-between flex-align-items-center">
+            <i class="color-darkGreen fas fa-envelope mx-2"></i>
+            <input class="w-10 h-10">
+            <button class="px-2 bg-lightYellow h-10 hvr-ripple-out"><i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+      <div class="info w-10 flex flex-column">
+          <div class="flex flex-row">
+            <div class="flex flex-column flex-space-between">
+              <img src="asset/img/logotype-lg-dark.svg" width="171" >
+              <p class="color-darkGreen fLineHeight">
+                07-1234-5678<br>
+                sweetaste@email.com 800<br>
+                高雄市新興區幸福路 520 號
+              </p>
+            </div>
+            <img class="eatToday toRight" src="asset/img/eatToday.svg" width="80" height="200">
+          </div>
+          <div class="copyRight flex flex-baseline mt-3">
+            <p class="flex flex-row">
+              <img src="asset/img/ic-line@.svg" width="32"  height="32">
+              <img class="mx-2" src="asset/img/ic-facebook.svg" width="32" height="32" >
+            </p>
+            <p class="color-darkGreen toRight">© 2018 Sweetaste* All Rights Reserved</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="asset/js/main.js"></script>
+</body>
+</html>

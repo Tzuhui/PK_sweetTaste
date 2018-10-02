@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header flex mx-3">
+      <div class="mainMenu flex flex-space-between flex-2 ">
+        <div class="logo flex-1 flex-center" id="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div id="mobile-toggle" class="button" ></div>
+        <ul class="flex-1 flex-center toRight mx-2">
+          <li><a href='index.html' class="hvr-underline-from-center active">首頁</a></li>
+          <li><a href='sweet.html' class="hvr-underline-from-center">甜點</a></li>
+          <li><a href='login.html' class="hvr-underline-from-center">登入</a></li>
+        </ul>
+      </div>
+      <a href="cart.html" id="shoppingCartIcon" class="flex flex-justify-content-center flex-align-items-center">
+        <i class="color-darkGreen fas fa-shopping-cart hvr-bounce-in"></i>
+      </a>
+    </div>
+    <div class="banner mx-3">
+      <img class="w-10" src="asset/img/photo-1473256599800-b48c7c88cd7e.jpg">
+    </div>
+    <div class="subMenu pos-rel">
+      <ul class="flex flex-justify-content-center">
+        <li class="pointer pos-rel h-10 w-25">
+          <div class="special pos-abs w-10 h-10 hvr-grow-rotate"></div>
+          <div class="specialColor pos-abs w-10 h-10 flex flex-justify-content-center">
+              <p>本日精選</p>
+          </div>
+        </li>
+        <li class="pointer pos-rel h-10 w-25">
+          <div class="hot pos-abs w-10 h-10 hvr-grow-rotate"></div>
+          <div class="hotColor pos-abs w-10 h-10 flex flex-justify-content-center">
+            <p>人氣推薦</p>
+          </div>
+        </li>
+        <li class="pointer pos-rel h-10 w-25">
+          <a class="w-10 h-10" href="sweet.html">
+            <div class="new pos-abs w-10 h-10 hvr-grow-rotate"></div>
+            <div class="hotColor pos-abs w-10 h-10 flex flex-justify-content-center">
+              <p>新品上市</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-column content">
+      <div class="lightGreenBg pos-rel bg-lightGreen my-4">
+        <div class="contentItem w-10 pos-abs flex flex-space-between">
+          <div class="Title contentTitle">
+            <h2 class="f-36">為什麼 — <br>&nbsp;&nbsp;選擇了做甜點？</h2>
+          </div>
+          <div class="Img flex mx-3 w-45" >
+            <div class="indexContentImg1 w-10 h-10"></div>
+          </div>
+          <p class="Intro contentIntro">青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。 
+              <br><br>是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+          </p>
+        </div>
+      </div>
+      <div class="lightGreenBg pos-rel bg-lightGreen my-5">
+          <div class="contentItem w-10 pos-abs flex flex-space-between">
+            <div class="Title2 contentTitle">
+              <h2 class="f-36">為什麼 — <br>&nbsp;&nbsp;一定要吃甜點？</h2>
+            </div>
+            <div class="Img2 flex mx-3 w-45" >
+              <div class="indexContentImg2 w-10 h-10"></div>
+            </div>
+            <p class="Intro2 contentIntro">青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。 
+                <br><br>是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="subBanner flex flex-justify-content-center">
+      <h2 class="subTitle f-36 color-darkGreen">想吃甜點 — <br>&nbsp;&nbsp;是不需要理由的。</h2>
+    </div>
+    <div class="productList">
+      <ul>
+        <li class="w-3 m-1">
+          <div class="sweetImg h-6 pos-rel pic1">
+              <div class="specialTag">本日精選</div>
+          </div>
+          <div class="flex flex-row">
+            <h2 class="name">甜甜圈</h2>
+            <h2 class="price">NT$ 280</h2>
+          </div>
+          <button class="bg-lG-color-dG w-10 p-2 hvr-bounce-to-bottom">加入購物車</button>
+        </li>
+        <li class="w-3 m-1">   
+          <div class="sweetImg h-6 pos-rel pic2">
+              <div class="specialTag">本日精選</div>
+          </div>
+          <div class="flex flex-row">
+            <h2 class="name">野莓戚風</h2>
+            <h2 class="price">NT$ 640</h2>
+          </div>
+          <button class="bg-lG-color-dG w-10 p-2 hvr-bounce-to-bottom">加入購物車</button>
+        </li>
+        <li class="w-3 m-1">
+          <div class="sweetImg h-6 pos-rel pic3">
+              <div class="specialTag">本日精選</div>
+          </div>
+          <div class="flex flex-row">
+            <div class="name">藍莓奶酪</div>
+            <div class="price">NT$ 450</div>
+          </div>
+          <button class="bg-lG-color-dG w-10 p-2 hvr-bounce-to-bottom">加入購物車</button>
+        </li>
+      </ul>
+    </div>
+    <div class="footer flex flex-column">
+      <div class="subscription w-10 flex flex-align-items-center">
+        <div class="subscriptionTitle w-6 flex flex-align-items-center">
+          <img  src="asset/img/logo-light.svg" width="40">
+          <p class="mx-2">訂閱你我的甜蜜郵件</p>
+        </div>
+        <div class="search w-4 h-10 flex flex-space-between flex-align-items-center">
+            <i class="color-darkGreen fas fa-envelope mx-2"></i>
+            <input class="w-10 h-10">
+            <button class="h-10 px-2 bg-lightYellow hvr-ripple-out">
+              <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+      </div>
+      <div class="info w-10 flex flex-column">
+          <div class="flex flex-row">
+            <div class="flex flex-column flex-space-between">
+              <img src="asset/img/logotype-lg-dark.svg" width="171" >
+              <p class="color-darkGreen">
+                07-1234-5678<br><br>
+                sweetaste@email.com 800<br><br>
+                高雄市新興區幸福路 520 號
+              </p>
+            </div>
+            <img class="eatToday toRight" src="asset/img/eatToday.svg" width="80" height="200">
+          </div>
+          <div class="copyRight flex flex-baseline mt-3">
+            <p class="flex flex-row">
+              <img src="asset/img/ic-line@.svg" width="32"  height="32">
+              <img class="mx-2" src="asset/img/ic-facebook.svg" width="32" height="32" >
+            </p>
+            <p class="color-darkGreen toRight">© 2018 Sweetaste* All Rights Reserved</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="asset/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header flex mx-3">
+      <div class="mainMenu flex flex-space-between flex-2 ">
+        <div class="logo flex-1 flex-center" id="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div id="mobile-toggle" class="button" ></div>
+        <ul class="flex-1 flex-center toRight mx-2">
+          <li><a href='index.html' class="hvr-underline-from-center">首頁</a></li>
+          <li><a href='sweet.html' class="hvr-underline-from-center">甜點</a></li>
+          <li><a href='login.html' class="hvr-underline-from-center">登入</a></li>
+        </ul>
+      </div>
+      <a href="cart.html" id="shoppingCartIcon" class="flex flex-justify-content-center flex-align-items-center">
+        <i class="color-darkGreen fas fa-shopping-cart hvr-bounce-in"></i>
+      </a>
+    </div>
+    <div class="flex flex-space-between content">
+      <div class="cartList w-7 ml-3">
+        <div class="cartListTitle">
+          <h2 class="bg-lG-color-dG p-3 my-1 mr-2">您的購物車</h2>
+        </div>
+          <ul>
+            <li class="my-2 flex flex-row flex-align-items-center flex-space-between">
+              <div class="cartListItem flex flex-row flex-space-between w-8">
+                <div class="cartListImg pic1"></div>
+                <div class="cartListCount flex flex-row w-6 flex-align-items-center flex-space-between mx-5">
+                  <div class="cartListTitle  w-4 flex flex-column flex-justify-content-center">
+                    <h2 class="py-1">甜甜圈</h2>
+                    <h2 class="f-16">NT$ 280</h2>
+                  </div>
+                  <ul class=" flex flex-row flex-align-items-center color-darkGreen">
+                    <li class="p-2 border-lG">-</li>
+                    <li class="p-2 border-lG">1</li>
+                    <li class="p-2 border-lG">+</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="forRWDLine w-10 border-lG">
+              <p class="cartListTotal w-2">NT$ 560</p>
+              <i class="color-darkGreen m-3 fas fa-trash hvr-bounce-in pointer"></i>
+            </li>
+            <hr class="border-lG">
+            <li class="my-2 flex flex-row flex-align-items-center flex-space-between">
+              <div class="cartListItem flex flex-row flex-space-between w-8">
+                <div class="cartListImg pic2"></div>
+                <div class="cartListCount flex flex-row w-6 flex-align-items-center flex-space-between mx-5">
+                  <div class="cartListTitle  w-4 flex flex-column flex-justify-content-center">
+                    <h2 class="py-1">野莓戚風</h2>
+                    <h2 class="f-16">NT$ 640</h2>
+                  </div>
+                  <ul class=" flex flex-row flex-align-items-center color-darkGreen">
+                    <li class="p-2 border-lG">-</li>
+                    <li class="p-2 border-lG">1</li>
+                    <li class="p-2 border-lG">+</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="forRWDLine w-10 border-lG">
+              <p class="cartListTotal w-2">NT$ 640</p>
+              <i class="color-darkGreen m-3 fas fa-trash hvr-bounce-in pointer"></i>
+            </li>
+            <hr class="border-lG">
+            <li class="my-2 flex flex-row flex-align-items-center flex-space-between">
+                <div class="cartListItem flex flex-row flex-space-between w-8">
+                  <div class="cartListImg pic3"></div>
+                  <div class="cartListCount flex flex-row w-6 flex-align-items-center flex-space-between mx-5">
+                    <div class="cartListTitle  w-4 flex flex-column flex-justify-content-center">
+                      <h2 class="py-1">藍莓奶酪</h2>
+                      <h2 class="f-16">NT$ 450</h2>
+                    </div>
+                    <ul class=" flex flex-row flex-align-items-center color-darkGreen">
+                        <li class="p-2 border-lG">-</li>
+                        <li class="p-2 border-lG">3</li>
+                        <li class="p-2 border-lG">+</li>
+                    </ul>
+                  </div>
+                </div>
+                <hr class="forRWDLine w-10 border-lG">
+                <p class="cartListTotal w-2">NT$ 1350</p>
+                <i class="color-darkGreen m-3 fas fa-trash hvr-bounce-in pointer"></i>
+            </li>
+          </ul>
+      </div>
+      <div class="cartOrderList w-3 mr-3">
+          <h2 class="color-lightGreen p-2 bg-dG-color-lG">訂單摘要</h2>
+          <ul class="cartOrderListitem bg-darkGreen p-2">
+            <li class="flex flex-baseline flex-space-between my-2 f-16 color-lightGreen font-weight-light">
+              <p>小計</p>
+              <p>NT$ 2,550</p>
+            </li>
+            <li class="flex flex-baseline flex-space-between my-2 f-16 color-lightGreen font-weight-light">
+                <p>運費</p>
+                <p>NT$ 300</p>
+            </li>
+            <li class="flex flex-baseline flex-space-between my-2 f-20 color-lightGreen">
+                <p>總計</p>
+                <p>NT$ 2,850</p>
+            </li>
+          </ul>
+          <button class="bg-lY-color-dG w-10 p-2 hvr-ripple-out" onclick="location.href='checkout.html'">結帳</button>
+      </div>
+    </div>
+    <div class="footer flex flex-column">
+        <div class="subscription w-10 flex flex-align-items-center">
+          <div class="subscriptionTitle w-6 flex flex-align-items-center">
+            <img  src="asset/img/logo-light.svg" width="40">
+            <p class="mx-2">訂閱你我的甜蜜郵件</p>
+          </div>
+          <div class="search w-4 h-10 flex flex-space-between flex-align-items-center">
+              <i class="color-darkGreen fas fa-envelope mx-2"></i>
+              <input class="w-10 h-10">
+              <button class="h-10 px-2 bg-lightYellow hvr-ripple-out">
+                <i class="fas fa-angle-right"></i>
+              </button>
+          </div>
+        </div>
+        <div class="info w-10 flex flex-column">
+            <div class="flex flex-row">
+              <div class="flex flex-column flex-space-between">
+                <img src="asset/img/logotype-lg-dark.svg" width="171" >
+                <p class="color-darkGreen">
+                  07-1234-5678<br><br>
+                  sweetaste@email.com 800<br><br>
+                  高雄市新興區幸福路 520 號
+                </p>
+              </div>
+              <img class="eatToday toRight" src="asset/img/eatToday.svg" width="80" height="200">
+            </div>
+            <div class="copyRight flex flex-baseline mt-3">
+              <p class="flex flex-row">
+                <img src="asset/img/ic-line@.svg" width="32"  height="32">
+                <img class="mx-2" src="asset/img/ic-facebook.svg" width="32" height="32" >
+              </p>
+              <p class="color-darkGreen toRight">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+      </div>
+  </div>
+  <script src="asset/js/main.js"></script>
+</body>
+</html>

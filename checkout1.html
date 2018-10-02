@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">  
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header flex mx-3">
+      <div class="mainMenu flex flex-space-between flex-2 ">
+        <div class="logo flex-1 flex-center" id="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div id="mobile-toggle" class="button" ></div>
+        <ul class="flex-1 flex-center toRight mx-2">
+          <li><a href='index.html' class="hvr-underline-from-center">首頁</a></li>
+          <li><a href='sweet.html' class="hvr-underline-from-center">甜點</a></li>
+          <li><a href='login.html' class="hvr-underline-from-center active">登入</a></li>
+        </ul>
+      </div>
+      <a href="cart.html" id="shoppingCartIcon" class="flex flex-justify-content-center flex-align-items-center">
+        <i class="color-darkGreen fas fa-shopping-cart hvr-bounce-in"></i>
+      </a>
+    </div>
+    <div class="flex flex-row flex-justify-content-center content m-3">
+      <div class="checkoutPage flex flex-column flex-justify-content-center w-5 bg-darkGreen">
+        <div class="checkoutForm p-4 flex flex-column">
+          <div class="checkoutTitle w-10 flex flex-space-between flex-align-items-center mx-1">
+            <h2 class="color-lightGreen mx-2">付款</h2>
+            <div class="flex flex-row mx-2 pos-rel">
+              <div class="circle border-lG pos-rel mx-3">
+                <div class="circle-inside pos-abs">
+                  <i class="color-darkGreen fas fa-check pos-abs" style="left:2px;top:2px;font-size:10px"></i>
+                </div>
+                <div class="circle-line pos-abs"></div>
+              </div>
+              <div class="circle border-lG pos-rel mx-3">
+                  <div class="circle-inside pos-abs"></div>
+                  <div class="circle-line pos-abs"></div>
+              </div>
+              <div class="circle border-lG pos-rel mx-3">
+              </div>
+            </div>
+          </div>
+          <div class="w-10 bg-dG-color-lG flex flex-column flex-align-items-center py-4">
+            <div class="flex flex-column w-10 mt-2">
+              <label for="lastname" class="flex m-1">信用卡卡號</label>
+              <div class="search h-10 flex flex-align-items-center mx-1 flex-space-between">
+                <input class="f-16 color-darkGreen w-4 h-10 mx-2" placeholder="9012-3456-7890-1234">
+                <i class="color-darkGreen far fa-credit-card mx-2"></i>
+              </div>
+            </div>
+            <div class="flex flex-row w-10 mt-2">
+                <div class="flex flex-column w-10">
+                  <label for="firstname" class="flex m-1">持卡人姓名</label>
+                  <div class="flex flex-row w-10">
+                    <div class="search h-10 w-9 flex flex-align-items-center mx-1">
+                      <input class="f-16 color-darkGreen w-5 h-10 mx-2" placeholder="王"">
+                    </div>
+                    <div class="search h-10 w-9 flex flex-align-items-center mx-1">
+                      <input class="f-16 color-darkGreen w-5 h-10 mx-2" placeholder="小明"">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="flex flex-row w-10 mt-2">
+                <div class="flex flex-column w-10">
+                  <label for="firstname" class="flex m-1">有效期限</label>
+                  <div class="flex flex-row w-10">
+                    <div class="search h-10 w-9 flex flex-align-items-center mx-1">
+                      <input class="f-16 color-darkGreen w-5 h-10 mx-2" placeholder="月">
+                    </div>
+                    <div class="search h-10 w-9 flex flex-align-items-center mx-1">
+                      <input class="f-16 color-darkGreen w-5 h-10 mx-2" placeholder="年"">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="flex flex-row w-10 mt-2">
+            <div class="flex flex-column w-10">
+              <label for="firstname" class="flex m-1">背面末三碼</label>
+                <div class="flex flex-row w-5">
+                  <div class="search h-10  flex flex-align-items-center mx-1">
+                    <input class="f-16 color-darkGreen w-5 h-10 mx-2" placeholder="123">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkoutNext p-4">
+          <button class=" bg-lY-color-dG w-10 p-2 f-24 hvr-ripple-out" onclick="location.href='checkout2.html'">下一步</button>
+        </div>
+      </div>
+      <div class="checkList w-3 flex flex-column flex-align-items-center mx-3">
+          <div class="cartOrderList w-10 border-lG">
+              <h2 class="bg-lG-color-G p-2">訂單摘要</h2>
+              <ul class="cartOrderListitem p-2">
+                <li class="flex flex-baseline flex-space-between my-2 f-16 color-green font-weight-light">
+                  <p>小計</p>
+                  <p>NT$ 2,550</p>
+                </li>
+                <li class="flex flex-baseline flex-space-between my-2 f-16 color-green font-weight-light">
+                    <p>運費</p>
+                    <p>NT$ 300</p>
+                </li>
+                <li class="flex flex-baseline flex-space-between my-2 f-20 color-green">
+                    <p>總計</p>
+                    <p>NT$ 2,850</p>
+                </li>
+              </ul>
+          </div>
+          <div class="cartOrderList w-10 border-lG my-2">
+              <h2 class="bg-lG-color-G p-2">訂單摘要</h2>
+              <ul class="cartOrderListitem p-2">
+                <li class="flex flex-baseline flex-space-between my-2 f-16 color-green font-weight-light">
+                  <div class="cartListItem flex flex-row flex-space-between w-10">
+                    <div class="cartListImg pic3 w-6"></div>
+                    <div class="cartListCount flex flex-column w-4 flex-align-items-center flex-justify-content-center mx-1">
+                      <h2 class="py-1">藍莓奶酪</h2>
+                      <h2 class="f-16">NT$ 450</h2>
+                    </div>
+                  </div>
+                </li>
+                <li class="flex flex-baseline flex-space-between my-2 f-16 color-green font-weight-light">
+                  <div class="cartListItem flex flex-row flex-space-between w-10">
+                    <div class="cartListImg pic2 w-6"></div>
+                    <div class="cartListCount flex flex-column w-4 flex-align-items-center flex-justify-content-center mx-1">
+                      <h2 class="py-1">野莓戚風</h2>
+                      <h2 class="f-16">NT$ 640</h2>
+                    </div>
+                  </div>
+                </li>
+                <li class="flex flex-baseline flex-space-between my-2 f-20 color-green">
+                  <div class="cartListItem flex flex-row flex-space-between w-10">
+                    <div class="cartListImg pic1 w-6"></div>
+                    <div class="cartListCount flex flex-column w-4 flex-align-items-center flex-justify-content-center mx-1">
+                      <h2 class="py-1">甜甜圈</h2>
+                      <h2 class="f-16">NT$ 280</h2>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <div class="footer flex flex-column">
+      <div class="subscription w-10 flex flex-align-items-center">
+        <div class="subscriptionTitle w-6 flex flex-align-items-center">
+          <img  src="asset/img/logo-light.svg" width="40">
+          <p class="mx-2">訂閱你我的甜蜜郵件</p>
+        </div>
+        <div class="search w-4 h-10 flex flex-space-between flex-align-items-center">
+            <i class="color-darkGreen fas fa-envelope mx-2"></i>
+            <input class="w-10 h-10">
+            <button class="px-2 bg-lightYellow h-10 hvr-ripple-out"><i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+      <div class="info w-10 flex flex-column">
+          <div class="flex flex-row">
+            <div class="flex flex-column flex-space-between">
+              <img src="asset/img/logotype-lg-dark.svg" width="171" >
+              <p class="color-darkGreen fLineHeight">
+                07-1234-5678<br>
+                sweetaste@email.com 800<br>
+                高雄市新興區幸福路 520 號
+              </p>
+            </div>
+            <img class="eatToday toRight" src="asset/img/eatToday.svg" width="80" height="200">
+          </div>
+          <div class="copyRight flex flex-baseline mt-3">
+            <p class="flex flex-row">
+              <img src="asset/img/ic-line@.svg" width="32"  height="32">
+              <img class="mx-2" src="asset/img/ic-facebook.svg" width="32" height="32" >
+            </p>
+            <p class="color-darkGreen toRight">© 2018 Sweetaste* All Rights Reserved</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="asset/js/main.js"></script>
+</body>
+</html>
