@@ -146,6 +146,12 @@
           flex-direction: column;
 }
 
+.flex-justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .flex-justify-content-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -880,7 +886,9 @@ html {
 }
 
 .wrap .checkoutPage {
-  height: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .wrap .checkoutPage .checkoutTitle h2 {
@@ -929,6 +937,12 @@ html {
   min-height: 500px;
 }
 
+.wrap .successPage {
+  background: url(../asset/img/success.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
 @media (max-width: 979px) {
   .wrap .header {
     min-height: 91px;
@@ -951,6 +965,9 @@ html {
   }
   .wrap .subMenu ul li img {
     width: 100%;
+  }
+  .wrap .footer {
+    margin: 0;
   }
   .wrap .footer .subscription {
     padding: 20px 60px;
@@ -1275,6 +1292,7 @@ html {
     color: #3F5D45;
   }
   .wrap .checkoutPage {
+    padding: 0;
     width: 100%;
   }
   .wrap .checkoutPage .checkoutForm {

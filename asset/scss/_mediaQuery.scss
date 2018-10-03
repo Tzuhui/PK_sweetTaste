@@ -27,6 +27,7 @@
       }
     }
     .footer {
+      margin: 0;
       .subscription {
         padding: 20px 60px;
         flex-direction: row;
@@ -302,6 +303,7 @@
     }
     /* checkout.html */
     .checkoutPage {
+      padding: 0;
       width: 100%;
       .checkoutForm {
         padding: 60px;
