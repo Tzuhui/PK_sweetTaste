@@ -990,6 +990,9 @@ html {
     margin: 0;
     font-size: 28px;
   }
+  .wrap .cartListCount {
+    margin: 0 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

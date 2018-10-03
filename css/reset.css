@@ -34,7 +34,7 @@ body {
 button {
 	cursor: pointer;
 }
-button, input {
+button, input,select {
 	border: 0;
 	outline: none;
 }
