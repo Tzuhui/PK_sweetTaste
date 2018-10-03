@@ -34,8 +34,7 @@ body {
 button {
 	cursor: pointer;
 }
-button, input, select {
-	border-radius: 0px;
+button, input {
 	border: 0;
 	outline: none;
 }
