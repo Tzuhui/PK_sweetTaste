@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: '微軟正黑體';
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -38,6 +39,7 @@ button, input, select {
 	border-radius: 0px;
 	border: 0;
 	outline: none;
+	font-family: '微軟正黑體';
 }
 a {
 	text-decoration: none;
