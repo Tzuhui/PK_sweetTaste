@@ -597,6 +597,7 @@
 }
 
 * {
+  font-family: 微軟正黑體;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -695,6 +696,7 @@ html {
 
 .wrap .subTitle {
   font-family: ‘cwTeXMing’, serif;
+  font-family: 新細明體;
   font-weight: bold;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
